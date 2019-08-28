@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* Header */
+.header{
+  background-color: rgb(85, 164, 213);
+  height: 10vh;
+  width: 100vw;
+}
+/**********/
+/* Main Body */
+.main {
+  background-color: rgb(34, 34, 34);
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.userBox {
+  background-color: rgb(235, 235, 235);
+  /* Use Percentage here, since we want the userBox to be sized relative to
+  .main class */
+  height: 70%;
+  width: 75%;
+}
+
+.dataLeft {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+  align-content: stretch;
+  margin-left: 5%;
+}
+
+.objCount {
+  margin-right: 5%;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: stretch;
+}
+
+.listAlign {
+  text-align: left;
+}
+
+.navi {
+  color: white;
+}
+
+.controlPanel {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: stretch;
+}
+.bottomAccent {
+  background-color: rgb(85, 164, 213);
+  height: 1px;
+  width: 80%;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -27,6 +27,17 @@
   background-color: rgb(85, 164, 213);
   height: 10vh;
   width: 100vw;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;
+}
+
+#homeLink {
+  margin-left: 30px;
+  cursor: pointer;
 }
 /**********/
 /* Main Body */
@@ -86,6 +97,7 @@ li {
 
 .navi {
   color: white;
+  cursor: pointer;
 }
 
 .controlPanel {
@@ -114,6 +126,7 @@ li {
   border-radius: 20px;
   height: 3rem;
   width: 6rem;
+  cursor: pointer;
 }
 
 #middleButton {

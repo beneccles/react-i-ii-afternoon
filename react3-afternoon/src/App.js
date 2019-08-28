@@ -30,7 +30,7 @@ class App extends Component {
   return (
     <div className="App">
     <div className="header">
-      
+      <h1 id="homeLink" onClick={()=>window.location.reload()}>Home</h1>
     </div>
     <div className="main">
       <div className="userBox">

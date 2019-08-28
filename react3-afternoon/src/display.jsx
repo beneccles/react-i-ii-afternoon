@@ -23,7 +23,7 @@ class Display extends Component {
 
         return (
             <div className="dataLeft">
-            <h1>{`${this.state.name.first} ${this.state.name.last}`}</h1>
+            <h1 id="blueBottom">{`${this.state.name.first} ${this.state.name.last}`}</h1>
             <br />
             <p><strong>From:</strong> {`${this.state.city}, ${this.state.country}`}</p>
             <p><strong>Job Title:</strong>{` ${this.state.title}`}</p>

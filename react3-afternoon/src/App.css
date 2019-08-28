@@ -79,17 +79,44 @@
 }
 
 .controlPanel {
+  /* In order for flex-box format to inherit correctly, we need to size control
+  panel at the same width as userBox. Otherwise, it will try to squish control panel'
+  into the smallest space possible in center. Set both userBox and controlPanel to
+  75% width, so that they will scale out correctly. */
+  width: 75%;
   display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 	align-content: stretch;
 }
-.bottomAccent {
+
+#blueBottom {
+ border-bottom: 3px solid rgb(85, 164, 213);
+}
+
+.editButtons {
   background-color: rgb(85, 164, 213);
-  height: 1px;
-  width: 80%;
+  font-size:  16px;
+  color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 20px;
+  height: 3rem;
+  width: 6rem;
+}
+
+#middleButton {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#frontButton {
+  margin-left: 10px;
+}
+
+#endButton {
+  margin-right: 10px;
 }
 
 

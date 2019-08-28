@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import data from './data.js';
 import Display from './display';
+import Editor from './Editor';
 
 class App extends Component {
   constructor(){
@@ -13,10 +14,18 @@ class App extends Component {
       current: 0
     }
   }
+  updateCount(value){
+
+    // Update the current index only if the count is greater than or equal
+    // to the 0 index, and less then equal to the highest index number.
+    if (value >= 0 && value < this.state.data.length)
+    {
+     this.setState({current:value});
+    }
+  }
 
   render(){
   // Since we imported it, we can access it just by referencing data.
-  console.log(data); 
 
   return (
     <div className="App">
@@ -30,13 +39,15 @@ class App extends Component {
           <h1>{`${this.state.current + 1}/${this.state.data.length}`}</h1>
         </div>
         <div>
-          <Display dObject={this.state.data[0]}/>
+          {console.log("Index to Display:" + this.state.current)}
+          <Display key={this.state.current} dObject={this.state.data[this.state.current]}/>
         </div>
       </div>
       <div className="controlPanel">
         {/* Render Control Buttons */}
-        <h1 className="navi"> {`< Previous`} </h1>
-        <h1 className="navi"> {`Next >`} </h1>
+        <h1 className="navi" onClick={() => this.updateCount(this.state.current - 1)}> {`< Previous`} </h1>
+        <Editor />
+        <h1 className="navi" onClick={() => this.updateCount(++this.state.current)}> {`Next >`} </h1>
       </div>
     </div>
     </div>

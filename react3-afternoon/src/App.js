@@ -39,7 +39,6 @@ class App extends Component {
           <h1>{`${this.state.current + 1}/${this.state.data.length}`}</h1>
         </div>
         <div>
-          {console.log("Index to Display:" + this.state.current)}
           <Display key={this.state.current} dObject={this.state.data[this.state.current]}/>
         </div>
       </div>

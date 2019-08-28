@@ -25,15 +25,18 @@ class Display extends Component {
             <div className="dataLeft">
             <h1 id="blueBottom">{`${this.state.name.first} ${this.state.name.last}`}</h1>
             <br />
+            <div id="closeSpace">
             <p><strong>From:</strong> {`${this.state.city}, ${this.state.country}`}</p>
             <p><strong>Job Title:</strong>{` ${this.state.title}`}</p>
             <p><strong>Employer:</strong>{` ${this.state.employer}`}</p>
+            </div>
             <br />
+            <div id="movieList">
             <strong>Favorite Movies:</strong>
             <ol>
                 {favMovies}
             </ol>
-            <div className="bottomAccent"></div>
+            </div>
             </div>
             
         )

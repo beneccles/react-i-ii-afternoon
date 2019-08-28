@@ -59,7 +59,17 @@
   align-content: stretch;
   margin-left: 5%;
 }
-
+#closeSpace {
+  text-align: left;
+  line-height: .9rem;
+}
+#movieList {
+  text-align: left;
+  line-height: default;
+}
+li {
+  margin-top: 5px;
+}
 .objCount {
   margin-right: 5%;
   display: flex;
